@@ -318,6 +318,25 @@ service:
     # hostName:
   annotations: {}
   labels: {}
+  ports:
+    smtp: 25
+    submissions: 465
+    submission: 587
+    smtp_proxy: 12525
+    subs_proxy: 10465
+    sub_proxy: 10587
+    imap: 143
+    imaps: 993
+    imap_proxy: 10143
+    imaps_proxy: 10993
+    pop3: 110
+    pop3s: 995
+    pop3_proxy: 10110
+    pop3s_proxy: 10995
+    rspamd: 11334
+    managesieve: 4190
+    metrics: 9154
+
 
 # Note this is a dictionary and not a list so individual keys can be overridden by --set or --value helm parameters
 persistence:
